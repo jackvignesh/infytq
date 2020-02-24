@@ -1,1 +1,34 @@
+---------------------------COLLABRATIVE ASSIGNMENT LEVEL 2---------------------------------------------
+
+#PF-Assgn-16
+def make_amount(rupees_to_make,no_of_five,no_of_one):
+    five_needed= int(rupees_to_make/5)
+    one_needed=rupees_to_make%5
+    if (five_needed>=no_of_five):
+        five_needed = no_of_five
+        one_needed = one_needed + ((five_needed - no_of_five)*5)
+        print("five needed:", five_needed)
+        print("one needed:", one_needed)
+    elif(five_needed < no_of_five):
+        five_needed= five_needed
+        one_needed= rupees_to_make - (5*five_needed)
+        print("five needed:", five_needed)
+        print("one needed:", one_needed)
+    else:
+        print("-1")
+make_amount(33,8,5)
+
+    #Start writing your code here
+    #Populate the variables: five_needed and one_needed
+
+
+    # Use the below given print statements to display the output
+    # Also, do not modify them for verification to work
+
+    #print("No. of Five needed :", five_needed)
+    #print("No. of One needed  :", one_needed)
+    #print(-1)
+
+
+#Provide different values for rupees_to_make,no_of_five,no_of_one and test your program
 
